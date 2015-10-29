@@ -1,0 +1,12 @@
+<h1>Director Details</h1>
+
+<img src="<%= Director.find(@id).image_url %>" width="10%">
+
+<h3><%= Director.find(@id).name %></h3>
+<h4>DOB: <%= Director.find(@id).dob %></h4>
+<p><%= Director.find(@id).bio %></p>
+
+<a href="http://localhost:3000/directors/">Back</a>
+<a href="http://localhost:3000/directors/<%= @id %>/edit_form">Edit</a>
+<a href="http://localhost:3000/delete_director/<%= @id %>">Delete</a>
+
