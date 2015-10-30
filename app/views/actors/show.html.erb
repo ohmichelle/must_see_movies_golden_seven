@@ -1,0 +1,12 @@
+<h1>Actor Details</h1>
+
+<img src="<%= Actor.find(@id).image_url %>" width="10%">
+
+<h3><%= Actor.find(@id).name %></h3>
+<h4>DOB: <%= Actor.find(@id).dob %></h4>
+<p><%= Actor.find(@id).bio %></p>
+
+<a href="http://localhost:3000/actors/">Back</a>
+<a href="http://localhost:3000/actors/<%= @id %>/edit_form">Edit</a>
+<a href="http://localhost:3000/delete_actor/<%= @id %>">Delete</a>
+

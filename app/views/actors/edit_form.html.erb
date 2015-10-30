@@ -1,0 +1,23 @@
+<h1>Edit Actor</h1>
+
+<form action="http://localhost:3000/update_actor/<%= @id %>">
+  <div>
+    <label for="actor_name">Actor Name:</label>
+    <input id="actor_name" type="text" name="name" value="<%= Actor.find(@id).name %>">
+  </div>
+  <div>
+    <label for="actor_dob">DOB:</label>
+    <input id="actor_dob" type="text" name="dob" value="<%= Actor.find(@id).dob %>">
+  </div>
+  <div>
+    <label for="actor_image_url">Image URL:</label>
+    <input id="actor_image_url" type="text" name="image_url" value="<%= Actor.find(@id).image_url %>">
+  </div>
+  <div>
+    <label for="actor_bio">Biography:</label>
+    <input id="actor_bio" type="text" name="bio" value="<%= Actor.find(@id).bio %>">
+  </div>
+  <div>
+    <button>Update Actor</button>
+  </div>
+</form>
