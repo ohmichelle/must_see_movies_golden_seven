@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+get("/",                         { :controller => "directors", :action => "home"})
 
 get("/directors",                { :controller => "directors", :action => "index" })
 
